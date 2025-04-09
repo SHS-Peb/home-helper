@@ -78,3 +78,7 @@ body {
 .room-button:hover {
   background-color: #99c492;
 }
+
+.line-through {
+  text-decoration: line-through;
+}

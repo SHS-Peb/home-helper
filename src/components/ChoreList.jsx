@@ -15,6 +15,8 @@ function ChoreList({ room, chores, onBack }) {
     }));
   };
 
+  const completedCount = Object.values(checkedChores).filter(Boolean).length
+
   return (
     <div className="chore-container">
       <h2 className="chore-heading">
@@ -36,6 +38,11 @@ function ChoreList({ room, chores, onBack }) {
           </li>
         ))}
       </ul>
+
+      <p className="completion-counter">
+         {completedCount} of {chores.length} chores completed
+      </p>
+
       <button className="back-button" onClick={onBack}>
         ← Back
       </button>

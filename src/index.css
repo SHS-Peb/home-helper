@@ -82,3 +82,9 @@ body {
 .line-through {
   text-decoration: line-through;
 }
+
+.completion-counter {
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
